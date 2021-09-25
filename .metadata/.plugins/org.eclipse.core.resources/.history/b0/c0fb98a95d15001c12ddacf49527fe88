@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title> Thymeleaf Demo</title>
+
+<link  
+       rel=""
+       th:href="@/css/style.css"
+    />
+
+</head>
+
+
+<body>
+   <p th:text=" 'the current time is : '+ ${theTime}"  class="funny"/>
+   
+   
+</body>
+</html>

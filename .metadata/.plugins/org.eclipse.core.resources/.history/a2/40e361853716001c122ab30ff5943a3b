@@ -1,0 +1,30 @@
+package com.amer.spring.practice.Employee.Controler;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.amer.spring.practice.Employee.entity.Employee;
+import com.amer.spring.practice.Employee.service.EmoloyeeService;
+
+@Controller
+@RequestMapping("/employee")
+public class EmployeeController {
+
+	@Autowired
+	private EmoloyeeService emservice ;
+		@GetMapping("/list")
+		public String findall(Model model)
+		{
+		
+		   List<Employee> listofemployee = 	emservice.findall();
+		   model.addAttribute("employee", listofemployee);
+		   return "employee-list";
+		}
+
+
+}

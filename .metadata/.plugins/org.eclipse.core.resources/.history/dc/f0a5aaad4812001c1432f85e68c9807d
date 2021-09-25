@@ -1,0 +1,9 @@
+package com.hope.springboot.demo.rest;
+
+public class demorestcontroller {
+
+	public demorestcontroller() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

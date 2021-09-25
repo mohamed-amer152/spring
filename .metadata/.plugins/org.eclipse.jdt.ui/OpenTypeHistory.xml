@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=spring-jpa-api-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.luv2code.springdemo.dao{EmployeeDAO.java[EmployeeDAO" modifiers="513" timestamp="1631564724780"/>
+    <typeInfo handle="=spring-data-jpa/C:\/Users\/Amer\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.5.4\/spring-data-jpa-2.5.4.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.5.4=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1631554651995"/>
+    <typeInfo handle="=Employee/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.amer.spring.practice.Employee.service{EmoloyeeService.java[EmoloyeeService" modifiers="513" timestamp="1631717072121"/>
+</typeInfoHistroy>

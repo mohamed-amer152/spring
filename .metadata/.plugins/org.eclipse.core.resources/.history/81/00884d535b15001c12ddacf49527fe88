@@ -1,0 +1,9 @@
+package com.amer.springboot.thymleavedemo.controller;
+
+public class democontroller {
+
+	public democontroller() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

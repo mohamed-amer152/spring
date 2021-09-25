@@ -1,0 +1,13 @@
+package com.amer.spring.practice.Employee.config;
+
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+public class AppConfig extends WebSecurityConfigurerAdapter {
+
+	public AppConfig() {
+	}
+
+
+
+
+}

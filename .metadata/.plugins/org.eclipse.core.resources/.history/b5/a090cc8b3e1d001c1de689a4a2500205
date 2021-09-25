@@ -1,0 +1,47 @@
+package com.amer.spring.practice.Employee.config;
+
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.User.UserBuilder;
+
+public class AppConfig extends WebSecurityConfigurerAdapter {
+
+	public AppConfig() {
+	}
+
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+
+		UserBuilder user = User.withDefaultPasswordEncoder();
+		auth.inMemoryAuthentication()
+		.withUser(user.username("amer").password("123").roles("employee" , "admin"))
+		.withUser(user.username("sheng").password("123").roles("employee" , "manager"))
+		.withUser(user.username("any").password("123").roles("employee" ))
+		;
+
+	}
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+
+		http.authorizeRequests()
+		.antMatchers("/employee/**").hasRole("employee")
+		.antMatchers("/employee/showaddform").hasAnyRole("manager")
+		.antMatchers("/employee/save").hasAnyRole("manager")
+		.antMatchers("/employee/showupdateform").hasAnyRole("manager")
+		.antMatchers("/employee/delete").hasAnyRole("admin")
+		.antMatchers("/resources/**").permitAll()
+		
+		
+		;
+
+	}
+
+	
+	
+
+
+
+}

@@ -1,0 +1,7 @@
+#
+#database props
+#
+
+url=jdbc:localhost://localhost:3360/employee_directory?useSSL=false
+user=springstudent
+password=springstudent

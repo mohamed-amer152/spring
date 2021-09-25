@@ -1,0 +1,37 @@
+package com.amer.spring.practice.Employee.service;
+
+import java.util.List;
+
+import com.amer.spring.practice.Employee.entity.Employee;
+
+public class EmployeeServiceImplemintation implements EmoloyeeService {
+
+	public EmployeeServiceImplemintation() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public List<Employee> findall() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee findsingale(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Employee empl) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.amer.spring.practice.Employee.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.amer.spring.practice.Employee.entity.Employee;
+
+public class EmoloyeeRepository implements JpaRepository<Employee, Integer> {
+
+	public EmoloyeeRepository() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

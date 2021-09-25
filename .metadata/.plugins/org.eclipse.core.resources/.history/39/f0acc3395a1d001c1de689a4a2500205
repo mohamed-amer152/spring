@@ -1,0 +1,9 @@
+package com.amer.spring.practice.Employee.config;
+
+public class securityConfig {
+
+	public securityConfig() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

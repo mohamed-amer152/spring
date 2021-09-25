@@ -1,0 +1,16 @@
+package com.amer.spring.practice.Employee.Controler;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class logincontroleer {
+
+
+	@GetMapping("/")
+	public String login()
+	{
+		return "login";
+	}
+
+}

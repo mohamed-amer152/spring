@@ -1,0 +1,5 @@
+package com.mohamed.rest.error;
+
+public class restExceptionHandler {
+
+}

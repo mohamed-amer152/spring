@@ -1,0 +1,5 @@
+package com.amer.spring.practice.Employee.service;
+
+public interface EmoloyeeService {
+
+}

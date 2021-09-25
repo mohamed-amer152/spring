@@ -1,0 +1,17 @@
+
+
+#db information
+
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/spring_security_demo_bcrypt?useSSL=false
+user=springstudent
+password=springstudent
+
+
+
+## connection pool info 
+intial.pool=5
+min.pool=5
+max.pool=20
+max.ideltime=3000
+

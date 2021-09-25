@@ -1,0 +1,9 @@
+package com.amer.springboot.thymleavedemo.controller;
+
+public class employeeController {
+
+	public employeeController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

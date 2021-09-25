@@ -1,0 +1,47 @@
+package com.luv2code.springdemo.springjpademo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.luv2code.springdemo.springjpademo.dao.EmployeeDAO;
+import com.luv2code.springdemo.springjpademo.entiy.Employee;
+
+@Service
+public class EmployeeServiceimpl implements EmployeeService {
+
+	private EmployeeDAO employeedao ;
+	
+	@Autowired
+	public EmployeeServiceimpl(EmployeeDAO edao) {
+		employeedao = edao ;
+	}
+
+	@Override
+	public List<Employee> getEmployees() {
+		
+		return employeedao.findAll();
+	}
+
+	@Override
+	public Employee getEmployee(int id) {
+		return employeedao.getById(id);
+	}
+
+	@Override
+	public void save(Employee employee) {
+		employeedao.save(employee);
+	}
+
+	@Override
+	public void delete(int EmployeeId) {
+		Employee empl = employeedao.getById(EmployeeId);
+		if (empl == null) {
+			throw new RuntimeException("that emplyee not excisited ");
+		}
+		employeedao.delete(empl);
+	}
+
+}

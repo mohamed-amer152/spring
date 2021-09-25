@@ -1,0 +1,16 @@
+package com.amer.spring.practice.Employee.config;
+
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+public class AppConfig extends WebSecurityConfigurerAdapter {
+
+	public AppConfig() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public AppConfig(boolean disableDefaults) {
+		super(disableDefaults);
+		// TODO Auto-generated constructor stub
+	}
+
+}

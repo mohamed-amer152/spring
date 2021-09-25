@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title> Employee list</title>
+
+<link  
+       rel="stylesheet"
+       th:href="@{/css/style.css}"
+    />
+
+</head>
+
+
+<body>
+
+   
+    <table border="1" class="funny">
+    
+		     <thead>
+		      	<tr >ID</tr>
+	     		<tr>FIRST NAME</tr>
+	     		<tr>LAST NAME</tr>
+	     		<tr>EMAIL</tr>
+		     </thead>
+		    
+      <tbody>
+            
+      		
+      		<tr th:each ="templist : ${list}">
+      		     <td th:text = "${templist.id}"/>
+      		     <td th:text ="${templist.first_name}"></td>
+      		     <td th:text ="${templist.last_name}"></td>
+      		     <td th:text ="${templist.email}"></td>
+      		</tr>
+      
+      </tbody>
+    
+    </table>
+   
+   
+   
+   
+   
+   
+   
+   
+</body>
+</html>

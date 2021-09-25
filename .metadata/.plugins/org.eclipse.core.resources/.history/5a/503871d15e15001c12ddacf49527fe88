@@ -1,0 +1,13 @@
+package com.amer.springboot.thymleavedemo.entity;
+
+public class employee {
+
+	private int id ; 
+	private String first_name ;
+	private String last_name ;
+	private String email ;
+	public employee() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

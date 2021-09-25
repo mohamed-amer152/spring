@@ -1,0 +1,7 @@
+#
+#spring.datasource. props
+#
+
+spring.datasource.url=jdbc:localhost://localhost:3360/employee_directory?useSSL=false
+spring.datasource.user=springstudent
+spring.datasource.password=springstudent

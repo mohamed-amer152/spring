@@ -1,0 +1,9 @@
+package com.amer.spring.practice.Employee.Controler;
+
+public class logincontroleer {
+
+	public logincontroleer() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

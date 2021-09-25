@@ -1,0 +1,21 @@
+package com.amer.springboot.thymleavedemo.controller;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class democontroller {
+
+	@GetMapping("/hello")
+	public String hello(Model model)
+	{
+		Date date = new Date();
+		model.addAttribute("theTime", date.getDate());
+		return "hello" ;
+	}
+
+}

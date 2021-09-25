@@ -1,0 +1,7 @@
+#
+#spring.datasource. props
+#
+
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_directory?useSSL=false&serverTimezone=UTC
+spring.datasource.username=springstude
+spring.datasource.password=springstudent
